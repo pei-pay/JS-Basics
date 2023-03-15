@@ -28,5 +28,11 @@ function c(name, name1) {
   console.log('Bye ' + name + ' ' + name1)
 }
 
-c.apply(tim, ['Jack', 'Bob'])
-c.call(tim, 'Jack', 'Bob')
+c.apply(null, ['Jack', 'Bob'])
+c.call(null, 'Jack', 'Bob')
+
+const array = [1, 2, 3, 4, 5]
+const result1 = Math.max.apply(null, array) // ES5
+const result2 = Math.max(...array) // ES6
+console.log(result1)
+console.log(result2)
