@@ -20,3 +20,13 @@ b() // Hello Tim
  */
 a.apply(tim) // Hello Tim
 a.call(tim) // Hello Tim
+
+/**
+ * callとapplyの違い
+ */
+function c(name, name1) {
+  console.log('Bye ' + name + ' ' + name1)
+}
+
+c.apply(tim, ['Jack', 'Bob'])
+c.call(tim, 'Jack', 'Bob')
