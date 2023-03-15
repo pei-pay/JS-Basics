@@ -31,6 +31,9 @@ function c(name, name1) {
 c.apply(null, ['Jack', 'Bob'])
 c.call(null, 'Jack', 'Bob')
 
+/**
+ * applyの実践的な使い方
+ */
 const array = [1, 2, 3, 4, 5]
 const result1 = Math.max.apply(null, array) // ES5
 const result2 = Math.max(...array) // ES6
