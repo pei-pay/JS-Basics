@@ -11,3 +11,10 @@ const person = {
 }
 
 person.hello()
+
+function b() {
+  const a = () => console.log('Bye ' + this.name)
+  a()
+}
+
+b()
